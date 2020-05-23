@@ -22,7 +22,8 @@ a=1
 while a<10:
     print("haha!!!!!!!!!")
     a=a+1
-    """
+    
+
 hig60={}
 low60={}
 stulist=["车小晓","王2","李小","李平芳","车穿过"]
@@ -35,4 +36,17 @@ while a<5:
         low60[stulist[a]]=grade
     a=a+1
 
-print(hig60,low60)
+print(hig60,low60)s
+
+a="chexiaoxiao"
+for i in a:
+    print(i)
+    
+a=list(range(0,100))
+for i in range(100):
+    print(i)
+    """
+for i in range(1,10):
+    for j in range(1,i+1):
+        print(j,"x",i,"=",i*j,end=" ")
+    print(" ")
