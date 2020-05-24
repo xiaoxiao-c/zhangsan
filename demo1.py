@@ -1,52 +1,24 @@
-b={}
-"""a["name"]=input("请输入姓名")
-a["sex"]=input("性别")
-a["age"]=input("请输入年龄")
-print("姓名",a["name"])
-print("性别：",a["sex"])
-print("年龄：",a["age"])
-b.update(name=input("姓名"))
-b.update(age=input("年龄"))
-b.update(sex=input("sex"))
-print(b)
-print(b["name"]+b["age"])
-
-a=1
-b=3
-if type(a) is int:
-    print("数字")
-else:
-    print("不是数字")
-
-a=1
-while a<10:
-    print("haha!!!!!!!!!")
-    a=a+1
-    
-
-hig60={}
-low60={}
-stulist=["车小晓","王2","李小","李平芳","车穿过"]
-a=0
-while a<5:
-    grade=int(input("请输入"+stulist[a]+"的成绩"))
-    if(grade>60):
-        hig60[stulist[a]]=grade
-    else :
-        low60[stulist[a]]=grade
-    a=a+1
-
-print(hig60,low60)s
-
-a="chexiaoxiao"
-for i in a:
-    print(i)
-    
-a=list(range(0,100))
-for i in range(100):
-    print(i)
+"""
+for i in range(0,31):
+    print("红灯还有",30-i,"秒")
+for i in range(0,36):
+    print("绿灯还有",35-i,"秒")
+for i in range(0,6):
+    print("黄灯还有",5-i,"秒")
     """
-for i in range(1,10):
-    for j in range(1,i+1):
-        print(j,"x",i,"=",i*j,end=" ")
-    print(" ")
+name={}
+acount=input("请输入账号以小写字母开头，5-8长度:")
+password=input("请输入密码，长度为6-12位:")
+if len(acount)<5 or len(acount)>8:
+    print("请输入账号长度为5-8")
+else:
+    if acount[0] in "qwertyuioplkjhgfdsazxcvbnm":
+        print("您账号输入正确")
+        if len(password)<12 or len(password)>6:
+            print("注册成功！")
+        else:
+            print("您输入的密码长度不是6-12位")
+    else:
+        print("您输入的账号首字母不是小写")
+    
+
